@@ -1,0 +1,94 @@
+body {
+    font-size: 1.375em;
+}
+p, ul {
+    width: 700px;
+    margin: 0 auto 1.618em;
+    color: #444;
+    line-height: 1.618em;
+    font-weight: normal;
+}
+
+/* MatowebIcons-Regular.otf */
+a {
+    color: #83649e;
+    text-decoration: underline;
+}
+a:visited {
+    text-decoration: none;
+}
+h1, h2 {
+    margin: 1.773em auto 0.618em;
+    text-align: center;
+    line-height: 1.096em;
+    color: #222;
+}
+h1 {
+    font-size: 4.236em;
+    max-width: 1000px;
+}
+h2 {
+    font-size: 1.773em;
+    max-width: 12em;
+}
+p.intro {
+    font-size: 1.618em;
+    font-weight: 300;
+    line-height: 1.292em;
+}
+blockquote {
+    font-family: Georgia, Times, Serif;
+    font-size: 2.618em;
+    font-style: italic;
+    max-width: 1000px;
+    margin: 1.096em auto;
+    text-align: center;
+    line-height: 1.618em;
+    color: #222;
+}
+blockquote footer {
+    font-family: "pt-sans", sans-serif;
+    font-size: 0.395em;
+    font-style:normal;
+    color: #444;
+    border-top: 1px solid #444;
+    display: table;
+    margin: 1.033em auto;
+}
+img.typekit-badge {
+    display: none!important;
+}
+
+/* Modular Scale ---------------------- 22px @ 1:1.618     700px @ 1:1.618     ----------------------
+Pixels    Ems    Ems @ 16    % of 13
+1,132.600    51.482    70.788    8,712.308
+1,033.352    46.971    64.585    7,948.862
+700.000    31.818    43.75    5,384.615
+638.660    29.03    39.916    4,912.769
+432.633    19.665    27.04    3,327.946
+394.722    17.942    24.67    3,036.323
+267.388    12.154    16.712    2,056.831
+243.957    11.089    15.247    1,876.592
+165.258    7.512    10.329    1,271.215
+150.777    6.854    9.424    1,159.823
+102.137    4.643    6.384    785.669
+93.187    4.236    5.824    716.823
+63.125    2.869    3.945    485.577
+57.594    2.618    3.6    443.031
+39.014    1.773    2.438    300.108
+35.596    1.618    2.225    273.815
+24.112    1.096    1.507    185.477
+22.000    1        1.375    169.231
+14.902    0.677    0.931    114.631
+13.597    0.618    0.85    104.592
+9.210    0.419    0.576    70.846
+8.404    0.382    0.525    64.646
+5.692    0.259    0.356    43.785
+5.194    0.236    0.325    39.954
+3.518    0.16    0.22    27.062
+3.210    0.146    0.201    24.692
+2.174    0.099    0.136    16.723
+1.984    0.09    0.124    15.262
+1.344    0.061    0.084    10.338
+1.226    0.056    0.077    9.431
+*/

@@ -1,0 +1,98 @@
+@import url("type.css");
+body {
+    font-size: 100%; /* change to 1.375 for desktop */
+    height: 100%;
+}
+p, div, section, article, footer, header {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Navigation */
+header {
+    font-family: 'mw-iconsregular';
+    font-size: 5em;
+    text-rendering: geometricPrecision;
+}
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    float: left;
+}
+.btnMenu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    float: right;
+}
+.menuToggle {
+    display: none;
+}
+nav {
+    background: url(images/bgMenu.png);
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    min-height: 101%;
+    display: table;
+    overflow: hidden;
+}
+nav ul {
+    list-style: none;
+    margin: 20% 0;
+    padding: 0;
+}
+nav li {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 12%;
+    /*margin: 1em 0;*/
+}
+nav li a {
+    width: 100%;
+    display: table;
+}
+.navSocial li {
+    width: 50%;
+    display: inline;
+}
+.tw a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background: url(images/icnTw@2x.png);
+    background-size: contain;
+    margin: 0 10px;
+}
+.dr a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background: url(images/icnDr@2x.png);
+    background-size: contain;
+}
+.btnCloseMenu {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    background: url(images/btnClose.png);
+    background-size: contain;
+    top: 25px;
+    right: 5%;
+    display: none;
+}
+
+/* Layout */
+.intro {
+    background: url(images/dead-end-projects.jpg) center center;
+    background-size: cover;
+    width: 100%;
+    display: table;
+    margin-bottom: 2.618em;
+}
+img.typekit-badge {
+    display: none!important;
+}

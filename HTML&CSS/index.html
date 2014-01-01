@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+
+    <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css?v=123">
+    <title>Matoweb Type</title>
+</head>
+<body>
+    <div class="menuToggle">
+        <nav>
+            <a href="javascript:void(0)" class="btnCloseMenu">&nbsp;</a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/writings">Writings</a></li>
+                <li>
+                    <ul class="navSocial">
+                        <li class="tw"><a href="https://twitter.com/matejlatin">&nbsp;</a></li>
+                        <li class="dr"><a href="http://dribbble.com/matejlatin">&nbsp;</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div  class="intro introDark">
+        <header>
+            <div class="logo">M</div>
+            <div class="btnMenu"><a href="javascript:void(0)">N</a></div>
+        </header>
+        <h1>Manage Your Day-To-Day Book Review</h1>
+        <p>You can't try to do things, you must simply do them. This book is full of advices on how to become productive.</p> <!-- Limit to 110 chars. -->
+    </div>
+    <article>
+        <p>Manage your day-to-day is the most recent book I read. I pre-ordered the book and it took a little longer to be published but now I finally got my hands on it.</p>
+        <p>The book was published by <a href="http://99u.com/">99U by Behance</a> and edited by <a href="https://twitter.com/jkglei">Jocelyn K. Glei</a>. It’s divided into four parts and many chapters, each dedicated to the insights on managing your day-to-day from many specialists: designers, film-makers, managers and so on. I’m not going into details, you can find out more about each of them in the book.</p>
+        <h2>What This Book is All About</h2>
+        <p>I honestly, didn’t know what to expect from this book. I thought it would have some advices on how to manage your day-to-day task, but it goes beyond. It’s much more than that. Each individual in this book gives real-life experience and how they manage their time, trying to be more productive. And this is where the value of this book really is.</p>
+            <blockquote>
+            We are what we repeatedly do. Excellence then, is not an act, but a habit.
+            <footer>Aristotle</footer>
+        </blockquote>
+        <p>It’s easy to write 100 pages on how to manage your time – just the theory. But without experience or guidance, it can prove hard to actually apply those advices. One can very quickly get lost and caught in that bad routine and habits, that make us all non-productive.</p>
+        <p>And this is where this book gives a good starting point. You can actually see, how many of highly creative people managed to create their habits, routines and tame their tools. By reading their real-life experience, I actually found myself doing wrong the same things as they did. So with a strong will and determination I know hope to improve my productivity and creativity.</p>
+
+        <h2>You Can Do Anything, But Not Everything</h2>
+        <p>What I most certainly didn’t expect from this book were advices on how to relax and why taking time for yourself is so important. But now when I think about it, it’s sounds common sense.</p>
+        <p>You have to take time off and rest to be more productive and work on something for yourself to become more creative. Client work or the stuff you do at work simply don’t give you the chance to work as free as you sometimes need to be. So it’s important to find some time in your routine to work on something that you find interesting.</p>
+
+        <h2>Final Thoughts</h2>
+        <p>The book was very enjoyable to read, especially the real-life experience by the authors. It’s actually very short but very well structured. I loved the quotes in the beginning of each chapter and the recaps, or take-aways, in the end of each section.</p>
+        <p>The book focuses on a problem most people have but probably don’t even know it. That was the case with me in I definitely recommend this to anyone who wants to be professional, productive and creative.</p>
+    </article>
+<script>
+        /* Get width and height of the window */
+        var windowHeight = $(window).height();
+        var windowWidth = $(window).width();
+
+        /* Set height of elements */
+        $('.intro').height(windowHeight);
+
+        /* Mobile Menu Toggle */
+        $(".btnMenu, .btnCloseMenu").click(function () {
+            $(".menuToggle, .btnCloseMenu").fadeToggle("fast");
+            $("header").fadeToggle();
+        });
+</script>
+<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+</body>
+</html>
