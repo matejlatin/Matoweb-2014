@@ -31,13 +31,14 @@
         </nav>
     </div>
     <div  class="intro introDark">
-        <header class="cf">
-            <div class="logo">MW</div>
-            <div class="btnMenu"><a href="javascript:void(0)">N</a></div>
-        </header>
-        <h1>Manage Your Day-To-Day Book Review</h1>
-        <p>You can't try to do things, you must simply do them. This book is full of advices on how to become productive.</p> <!-- Limit to 110 chars. -->
-    </div>
+        <div class="verticalCenter">
+            <header class="cf">
+                <div class="logo">MW</div>
+                <div class="btnMenu"><a href="javascript:void(0)">N</a></div>
+            </header>
+            <h1>Manage Your Day-To-Day Book Review</h1>
+            <p>You can't try to do things, you must simply do them. This book is full of advices on how to become productive.</p> <!-- Limit to 110 chars. --></div>
+        </div>
     <article>
         <p>Manage your day-to-day is the most recent book I read. I pre-ordered the book and it took a little longer to be published but now I finally got my hands on it.</p>
         <p>The book was published by <a href="http://99u.com/">99U by Behance</a> and edited by <a href="https://twitter.com/jkglei">Jocelyn K. Glei</a>. It’s divided into four parts and many chapters, each dedicated to the insights on managing your day-to-day from many specialists: designers, film-makers, managers and so on. I’m not going into details, you can find out more about each of them in the book.</p>
@@ -70,7 +71,7 @@
         $(".btnMenu, .btnCloseMenu").click(function () {
             $(".menuToggle, .btnCloseMenu").fadeToggle("fast");
             $("header").fadeToggle("fast");
-            $(".intro, article").toggleClass("blurred");
+            //$(".intro p, .intro h1, article").toggleClass("blurred");
         });
         $(window).bind('scroll', function(){
                 if($(this).scrollTop() > 0) {
