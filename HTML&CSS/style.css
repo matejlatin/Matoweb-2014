@@ -1,7 +1,23 @@
 @import url("type.css");
-body {
+
+/* ClearFix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/* HTML */
+body, html {
     font-size: 100%; /* change to 1.375 for desktop */
     height: 100%;
+    margin-bottom: 60px;
 }
 p, div, section, article, footer, header {
     -webkit-box-sizing: border-box;
@@ -9,89 +25,122 @@ p, div, section, article, footer, header {
     box-sizing: border-box;
 }
 /* Navigation */
+
 header {
-    font-family: 'mw-iconsregular';
-    font-size: 5em;
-    text-rendering: geometricPrecision;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 3%;
+}
+.headerWhiteBg {
+    background: rgba(255,255,255,0.8);
+}
+.btnCloseMenu {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 3%;
+    text-indent: -9999px;
 }
 .logo {
-    position: fixed;
-    top: 10px;
-    left: 10px;
+    background: url(images/bgLogo.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
     float: left;
 }
 .btnMenu {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    background: url(images/btnMenu.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
     float: right;
+    text-indent: -9999px;
+}
+.btnMenu:hover {
+    cursor: pointer;
 }
 .menuToggle {
     display: none;
 }
+.blurred {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
 nav {
-    background: url(images/bgMenu.png);
+    background: rgba(131, 100, 158, 0.8);
     position: fixed;
     top: 0;
     z-index: 10000;
     width: 100%;
-    min-height: 101%;
+    height: 100%;
     display: table;
     overflow: hidden;
 }
-nav ul {
+nav>ul {
     list-style: none;
-    margin: 20% 0;
+    position: absolute;
+    top: 20%;
     padding: 0;
+    margin: 0;
+    display: table;
+    height: 60%;
+    width: 100%;
 }
 nav li {
     display: table;
     text-align: center;
     width: 100%;
-    height: 12%;
-    /*margin: 1em 0;*/
+    height: 20%;
 }
-nav li a {
+nav li a, nav li ul {
     width: 100%;
-    display: table;
+    display: table-cell;
+    vertical-align: middle;
 }
 .navSocial li {
     width: 50%;
     display: inline;
 }
-.tw a {
+.navSocial>li>a {
     width: 28px;
     height: 28px;
     display: inline-block;
-    background: url(images/icnTw@2x.png);
     background-size: contain;
     margin: 0 10px;
 }
+.tw a {
+    background: url(images/icnTw@2x.png);
+}
 .dr a {
-    width: 28px;
-    height: 28px;
-    display: inline-block;
     background: url(images/icnDr@2x.png);
-    background-size: contain;
+}
+nav>ul>li>ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 .btnCloseMenu {
-    position: fixed;
-    width: 32px;
-    height: 32px;
     background: url(images/btnClose.png);
     background-size: contain;
-    top: 25px;
-    right: 5%;
+    right: 3%;
     display: none;
 }
 
 /* Layout */
 .intro {
-    background: url(images/dead-end-projects.jpg) center center;
+    background: url(images/jow.jpg) center center;
     background-size: cover;
     width: 100%;
-    display: table;
+    display: table-cell;
     margin-bottom: 2.618em;
+    vertical-align: middle;
 }
 img.typekit-badge {
     display: none!important;

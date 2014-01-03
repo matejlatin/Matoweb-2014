@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/blur.min.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css?v=123">
-    <title>Matoweb Type</title>
+    <title>Matoweb 2014</title>
 </head>
 <body>
     <div class="menuToggle">
@@ -30,8 +31,8 @@
         </nav>
     </div>
     <div  class="intro introDark">
-        <header>
-            <div class="logo">M</div>
+        <header class="cf">
+            <div class="logo">MW</div>
             <div class="btnMenu"><a href="javascript:void(0)">N</a></div>
         </header>
         <h1>Manage Your Day-To-Day Book Review</h1>
@@ -68,9 +69,17 @@
         /* Mobile Menu Toggle */
         $(".btnMenu, .btnCloseMenu").click(function () {
             $(".menuToggle, .btnCloseMenu").fadeToggle("fast");
-            $("header").fadeToggle();
+            $("header").fadeToggle("fast");
+            $(".intro, article").toggleClass("blurred");
         });
+        $(window).bind('scroll', function(){
+                if($(this).scrollTop() > 0) {
+                    $("header").addClass("headerWhiteBg");
+                }
+                else {
+                    $("header").removeClass("headerWhiteBg");
+                }
+            });
 </script>
-<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 </body>
 </html>
