@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="js/blur.min.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
@@ -73,10 +74,10 @@
         });
         $(window).bind('scroll', function(){
                 if($(this).scrollTop() > 0) {
-                    $("header").addClass("headerWhiteBg");
+                    $("header").addClass("headerWhiteBg", 300);
                 }
                 else {
-                    $("header").removeClass("headerWhiteBg");
+                    $("header").removeClass("headerWhiteBg", 300);
                 }
             });
 </script>
