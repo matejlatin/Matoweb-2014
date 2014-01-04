@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script type="text/javascript" src="js/blur.min.js"></script>
-
-    <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" href="style.css?v=123">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Matoweb - I'm passionate about simple & usable design.">
+    <meta property="og:title" content="Simple & usable design by Matoweb">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://matoweb.com">
+    <meta name="twitter:creator" content="@matejlatin">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="style.css?v=124">
     <title>Matoweb 2014</title>
 </head>
 <body>
@@ -59,27 +59,39 @@
         <p>The book was very enjoyable to read, especially the real-life experience by the authors. It’s actually very short but very well structured. I loved the quotes in the beginning of each chapter and the recaps, or take-aways, in the end of each section.</p>
         <p>The book focuses on a problem most people have but probably don’t even know it. That was the case with me in I definitely recommend this to anyone who wants to be professional, productive and creative.</p>
     </article>
-<script>
-        /* Get width and height of the window */
-        var windowHeight = $(window).height();
-        var windowWidth = $(window).width();
-
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="js/headroom.min.js"></script>
+    <!--Typekit import-->
+    <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script>
         /* Set height of elements */
-        $('.intro').height(windowHeight);
+        var wh = $(window).height();
+        $('.intro').height(wh);
 
         /* Mobile Menu Toggle */
         $(".btnMenu, .btnCloseMenu").click(function () {
             $(".menuToggle, .btnCloseMenu").fadeToggle("fast");
-            //$("header").fadeToggle("fast");
         });
-        $(window).bind('scroll', function(){
-                if($(this).scrollTop() > 0) {
-                    $("header").addClass("headerWhiteBg", 300);
+
+        /* Header Behaviour */
+        var lastScrollTop = 0;
+        var dh = $(document).height();
+        $(window).scroll(function(event){
+            var st = $(this).scrollTop();
+            if (st > 0 && (st + wh) < dh){ // FIXME Fix the issue of swiping to the top on mobile phones (The header doesn't appear).
+                if (st > lastScrollTop){
+                    $('header').fadeOut(); // FIXME Header fades out on the end of swipe on mobile. Try jQuery Mobile.
+                } else {
+                    $('header').addClass("headerWhiteBg").fadeIn();
                 }
-                else {
-                    $("header").removeClass("headerWhiteBg", 300);
-                }
-            });
-</script>
+            }
+            if (st <= 0){
+                $("header").removeClass("headerWhiteBg", 300);
+            }
+           lastScrollTop = st;
+        });
+    </script>
 </body>
 </html>

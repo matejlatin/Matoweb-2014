@@ -53,7 +53,7 @@ header {
     padding: 3%;
 }
 .headerWhiteBg {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.9);
 }
 .btnCloseMenu, .logo, .btnMenu {
     width: 50px;
@@ -89,7 +89,7 @@ header {
     background-size: cover;
     z-index: 9000;
 }
-nav {
+nav { /* FIXME Nav doesn't stretch to 100% height on Safari on iPhone. */
     background:  rgba(131, 100, 158, 0.8);
     z-index: 10000;
     display: table;
@@ -98,7 +98,7 @@ nav {
 nav>ul {
     list-style: none;
     position: absolute;
-    top: 20%;
+    bottom: 20%;
     padding: 0;
     margin: 0;
     display: table;
@@ -139,7 +139,7 @@ nav>ul>li>ul {
     position: relative;
 }
 
-/* Layout */
+/* Minor Fixes */
 img.typekit-badge {
     display: none!important;
 }
