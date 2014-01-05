@@ -1,5 +1,4 @@
 @import url("normalize.css");
-@import url("type.css");
 
 /* ClearFix */
 .cf:before,
@@ -80,7 +79,7 @@ header {
 }
 .menuToggle, nav {
     width: 100%;
-    height: 100%;
+    height: 100%!important;
     position: fixed;
 }
 .menuToggle {
@@ -89,11 +88,10 @@ header {
     background-size: cover;
     z-index: 9000;
 }
-nav { /* FIXME Nav doesn't stretch to 100% height on Safari on iPhone. */
+nav {
     background:  rgba(131, 100, 158, 0.8);
     z-index: 10000;
-    display: table;
-    overflow: hidden;
+    display: block;
 }
 nav>ul {
     list-style: none;
@@ -137,6 +135,128 @@ nav>ul>li>ul {
     margin: 0;
     padding: 0;
     position: relative;
+}
+
+/* Main Text */
+article p, article ul {
+    margin: 0 5% 1.756em;
+    color: #444;
+    line-height: 1.5em;
+    font-weight: normal;
+}
+.intro p {
+    font-size: 1.375em;
+    font-weight: 300;
+    line-height: 1.292em;
+    text-align: center;
+}
+blockquote {
+    font-family: Georgia, Times, Serif;
+    font-size: 2.25em;
+    font-style: italic;
+    margin: 1.171em auto;
+    text-align: center;
+    line-height: 1.5em;
+    color: #222;
+}
+blockquote footer {
+    font-family: "pt-sans", sans-serif;
+    font-size: 0.444em;
+    font-style:normal;
+    color: #444;
+    border-top: 1px solid #444;
+    display: table;
+    margin: 1.171em auto;
+}
+/* Headings */
+h1, h2 {
+    margin: 2.25em auto 0.667em;
+    text-align: center;
+    line-height: 1.171em;
+}
+h1 {
+    font-size: 2.25em;
+}
+h2 {
+    font-size: 1.756em;
+    max-width: 80%;
+}
+/* Links */
+p a {
+    color: #83649e;
+    text-decoration: underline;
+}
+a:visited {
+    text-decoration: none;
+}
+.intro a {
+    text-decoration: none;
+}
+/* Light & Dark UI */
+.introDark, .introDark a {
+    color: #222;
+}
+nav a {
+    color: #fff;
+    font-size: 2em;
+    font-family: "museo-sans", sans-serif;
+    text-decoration: none;
+}
+
+/* Media queries */
+@media all and (min-width: 70rem){ /* TODO Check and compare this code and try to optimize it. */
+    body {
+        font-size: 1.375em;
+    }
+    article p, article ul {
+        width: 43.75rem;
+        margin: 0 auto 1.618em;
+        color: #444;
+        line-height: 1.618em;
+        font-weight: normal;
+    }
+    h2 {
+        margin: 1.773em auto 0.618em;
+        text-align: center;
+        line-height: 1.096em;
+        color: #222;
+    }
+    h1 {
+        font-size: 4.236em;
+        max-width: 60rem;
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 1.773em;
+        max-width: 700px;
+    }
+    .intro p {
+        font-size: 1.618em;
+        font-weight: 300;
+        line-height: 1.292em;
+        max-width: 43.75rem;
+        margin: auto;
+        text-align: left;
+    }
+    blockquote {
+        font-family: Georgia, Times, Serif;
+        font-size: 2.618em;
+        font-style: italic;
+        max-width: 1000px;
+        margin: 1.096em auto;
+        text-align: center;
+        line-height: 1.618em;
+        color: #222;
+    }
+    blockquote footer {
+        font-family: "pt-sans", sans-serif;
+        font-size: 0.395em;
+        font-style:normal;
+        color: #444;
+        border-top: 1px solid #444;
+        display: table;
+        margin: 1.033em auto;
+    }
 }
 
 /* Minor Fixes */

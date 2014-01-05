@@ -1,0 +1,144 @@
+@import url("normalize.css");
+@import url("responsive.css");
+
+/* ClearFix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/* Align to vertical center */
+.verticalCenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* HTML */
+body, html {
+    font-size: 1.375em; /* change to 1.375 for desktop */
+    height: 100%;
+}
+p, div, section, article, footer, header {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*
+article p:last-child {
+    padding-bottom: 3em;
+}
+*/
+.intro {
+    background: url(images/jow.jpg) center center;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 2.618em;
+    display: table;
+}
+
+/* Navigation */
+header {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 3%;
+}
+.headerWhiteBg {
+    background: rgba(255,255,255,0.9);
+}
+.btnCloseMenu, .logo, .btnMenu {
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+}
+.btnCloseMenu {
+    position: fixed;
+    margin-top: 3%;
+    background: url(images/btnClose.png);
+    background-size: contain;
+    right: 3%;
+    display: none;
+}
+.logo {
+    background: url(images/bgLogo.png);
+    background-size: contain;
+    float: left;
+}
+.btnMenu {
+    background: url(images/btnMenu.png);
+    background-size: contain;
+    float: right;
+}
+.menuToggle, nav {
+    width: 100%;
+    height: 100%!important;
+    position: fixed;
+}
+.menuToggle {
+    display: none;
+    background: url(images/jow.jpg) center center;
+    background-size: cover;
+    z-index: 9000;
+}
+nav {
+    background:  rgba(131, 100, 158, 0.8);
+    z-index: 10000;
+    display: block;
+}
+nav>ul {
+    list-style: none;
+    position: absolute;
+    bottom: 20%;
+    padding: 0;
+    margin: 0;
+    display: table;
+    height: 60%;
+    width: 100%;
+}
+nav li {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+nav li a, nav li ul {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.navSocial li {
+    width: 50%;
+    display: inline;
+}
+.navSocial>li>a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-size: contain;
+    margin: 0 10px;
+}
+.tw a {
+    background: url(images/icnTw@2x.png);
+}
+.dr a {
+    background: url(images/icnDr@2x.png);
+}
+nav>ul>li>ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Minor Fixes */
+img.typekit-badge {
+    display: none!important;
+}

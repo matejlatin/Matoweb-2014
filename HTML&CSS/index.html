@@ -62,12 +62,14 @@
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.fastButtons.js"></script>
     <!--Typekit import-->
     <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script>
         /* Set height of elements */
         var wh = $(window).height();
+        var ww = $(window).width();
         $('.intro').height(wh);
 
         /* Mobile Menu Toggle */
@@ -80,7 +82,7 @@
         var dh = $(document).height();
         $(window).scroll(function(event){
             var st = $(this).scrollTop();
-            if (st > 0 && (st + wh) < dh){ // FIXME Fix the issue of swiping to the top on mobile phones (The header doesn't appear).
+            if (st > 0 && (st + wh) < dh){
                 if (st > lastScrollTop){
                     $('header').fadeOut(); // FIXME Header fades out on the end of swipe on mobile. Try jQuery Mobile.
                 } else {
@@ -88,7 +90,7 @@
                 }
             }
             if (st <= 0){
-                $("header").removeClass("headerWhiteBg", 300);
+                $("header").removeClass("headerWhiteBg", 300).fadeIn();
             }
            lastScrollTop = st;
         });

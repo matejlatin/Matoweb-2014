@@ -1,0 +1,55 @@
+/* Media queries */
+@media all and (min-width: 70rem){ /* TODO Check and compare this code and try to optimize it. */
+    body {
+        font-size: 1.375em;
+    }
+    article p, article ul {
+        width: 43.75rem;
+        margin: 0 auto 1.618em;
+        color: #444;
+        line-height: 1.618em;
+        font-weight: normal;
+    }
+    h2 {
+        margin: 1.773em auto 0.618em;
+        text-align: center;
+        line-height: 1.096em;
+        color: #222;
+    }
+    h1 {
+        font-size: 4.236em;
+        max-width: 60rem;
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 1.773em;
+        max-width: 700px;
+    }
+    .intro p {
+        font-size: 1.618em;
+        font-weight: 300;
+        line-height: 1.292em;
+        max-width: 43.75rem;
+        margin: auto;
+        text-align: left;
+    }
+    blockquote {
+        font-family: Georgia, Times, Serif;
+        font-size: 2.618em;
+        font-style: italic;
+        max-width: 1000px;
+        margin: 1.096em auto;
+        text-align: center;
+        line-height: 1.618em;
+        color: #222;
+    }
+    blockquote footer {
+        font-family: "pt-sans", sans-serif;
+        font-size: 0.395em;
+        font-style:normal;
+        color: #444;
+        border-top: 1px solid #444;
+        display: table;
+        margin: 1.033em auto;
+    }
+}
