@@ -44,7 +44,7 @@
         <p>The book was published by <a href="http://99u.com/">99U by Behance</a> and edited by <a href="https://twitter.com/jkglei">Jocelyn K. Glei</a>. It’s divided into four parts and many chapters, each dedicated to the insights on managing your day-to-day from many specialists: designers, film-makers, managers and so on. I’m not going into details, you can find out more about each of them in the book.</p>
         <h2>What This Book is All About</h2>
         <p>I honestly, didn’t know what to expect from this book. I thought it would have some advices on how to manage your day-to-day task, but it goes beyond. It’s much more than that. Each individual in this book gives real-life experience and how they manage their time, trying to be more productive. And this is where the value of this book really is.</p>
-            <blockquote>
+        <blockquote>
             We are what we repeatedly do. Excellence then, is not an act, but a habit.
             <footer>Aristotle</footer>
         </blockquote>
@@ -59,18 +59,32 @@
         <p>The book was very enjoyable to read, especially the real-life experience by the authors. It’s actually very short but very well structured. I loved the quotes in the beginning of each chapter and the recaps, or take-aways, in the end of each section.</p>
         <p>The book focuses on a problem most people have but probably don’t even know it. That was the case with me in I definitely recommend this to anyone who wants to be professional, productive and creative.</p>
     </article>
+    <!-- TODO Next & Previous Article -->
+    <aside>
+        <section id="deadEnd">
+            <h3>Dead End Projects in Freelancing</h3>
+            <p>You can't try to do things, you must simply do them. This book is full of advices on how to become productive.</p>
+            <a href="">Next Article</a>
+        </section>
+    </aside>
+    <aside>
+        <section id="manage">
+            <h3>Manage Your Day-to-Day Book Review</h3>
+            <p>You can't try to do things, you must simply do them. This book is full of advices on how to become productive.</p>
+            <a href="">Previous Article</a>
+        </section>
+    </aside>
+
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile.fastButtons.js"></script>
-    <!--Typekit import-->
-    <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="js/jquery.tweetable.js"></script>
     <script>
         /* Set height of elements */
         var wh = $(window).height();
         var ww = $(window).width();
-        $('.intro').height(wh);
+        //$('.intro').height(wh);
 
         /* Mobile Menu Toggle */
         $(".btnMenu, .btnCloseMenu").click(function () {
@@ -84,7 +98,7 @@
             var st = $(this).scrollTop();
             if (st > 0 && (st + wh) < dh){
                 if (st > lastScrollTop){
-                    $('header').fadeOut(); // FIXME Header fades out on the end of swipe on mobile. Try jQuery Mobile.
+                    $('header').fadeOut(); // FIXME Header fades out only on the end of swipe on mobile. Try jQuery Mobile.
                 } else {
                     $('header').addClass("headerWhiteBg").fadeIn();
                 }
@@ -94,6 +108,31 @@
             }
            lastScrollTop = st;
         });
+
+        /* Tweet Quotes */
+        $(function () {
+          $('blockquote').tweetable({ // FIXME The link should only be an image.
+            via: 'matejlatin'
+          });
+        });
+
+        $('blockquote').append("<img src='images/tw.png' class='tweet' title='Tweet This' alt='Tweet' />");
+
+        $(document).ready(function() {
+
+        $(window).scroll( function(){
+            $('.tweet').each( function(i){
+                var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if( bottom_of_window > bottom_of_object ){
+                    $(this).delay(200).animate({'opacity':'1'},500);
+                    }
+                });
+            });
+        });
     </script>
+    <!--Typekit import-->
+    <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>

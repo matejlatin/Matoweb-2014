@@ -17,6 +17,7 @@
 .verticalCenter {
     display: table-cell;
     vertical-align: middle;
+    background: rgba(255,255,255,0.7);
 }
 
 /* HTML */
@@ -29,17 +30,38 @@ p, div, section, article, footer, header {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-/*
 article p:last-child {
     padding-bottom: 3em;
 }
-*/
 .intro {
-    background: url(images/jow.jpg) center center;
+    background: url(images/manage.jpg) center center;
     background-size: cover;
     width: 100%;
+    height: 100%;
     margin-bottom: 2.618em;
     display: table;
+}
+aside {
+    background: #f6f6f6;
+    text-align: center;
+    padding: 5% 5%;
+}
+aside section {
+    padding: 2% 0 5%;
+}
+#deadEnd {
+    background: url(images/post-thumbnails/dead-end.jpg) center center no-repeat;
+    background-size: contain;
+}
+#manage {
+    background: url(images/post-thumbnails/manage-your-day.jpg) center center no-repeat;
+    background-size: contain;
+}
+aside + aside {
+    margin-top: 4px;
+}
+.tweet {
+    opacity: 0;
 }
 
 /* Navigation */
@@ -84,7 +106,7 @@ header {
 }
 .menuToggle {
     display: none;
-    background: url(images/jow.jpg) center center;
+    background: url(images/manage.jpg) center center;
     background-size: cover;
     z-index: 9000;
 }
@@ -145,10 +167,12 @@ article p, article ul {
     font-weight: normal;
 }
 .intro p {
-    font-size: 1.375em;
+    font-size: 1.292em;
     font-weight: 300;
     line-height: 1.292em;
-    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;;
+    text-align: left;
 }
 blockquote {
     font-family: Georgia, Times, Serif;
@@ -160,14 +184,28 @@ blockquote {
     color: #222;
 }
 blockquote footer {
-    font-family: "pt-sans", sans-serif;
+    font-family: Georgia, serif;
     font-size: 0.444em;
     font-style:normal;
     color: #444;
     border-top: 1px solid #444;
     display: table;
-    margin: 1.171em auto;
+    margin: 1.171em auto 0;
+    padding: 0 1em;
 }
+a.tweetable {
+    text-decoration: none;
+}
+aside section h3 {
+    margin: 0.6em 1em;
+}
+aside a {
+    text-decoration: none;
+    padding: 0.3em 0.7em;;
+    border: solid 1px;
+}
+/* TODO put together all the links under LINKS section*/
+
 /* Headings */
 h1, h2 {
     margin: 2.25em auto 0.667em;
@@ -181,8 +219,12 @@ h2 {
     font-size: 1.756em;
     max-width: 80%;
 }
+h3 {
+    font-size: 1.5em;
+}
+
 /* Links */
-p a {
+a {
     color: #83649e;
     text-decoration: underline;
 }
@@ -196,6 +238,9 @@ a:visited {
 .introDark, .introDark a {
     color: #222;
 }
+.introLight, introLight a {
+    color: #fff;
+}
 nav a {
     color: #fff;
     font-size: 2em;
@@ -203,12 +248,12 @@ nav a {
     text-decoration: none;
 }
 
-/* Media queries */
-@media all and (min-width: 70rem){ /* TODO Check and compare this code and try to optimize it. */
+/* Media queries */ /* TODO Fix the media queries for specific devices */
+@media all and (min-width: 43.75rem){ /* TODO Check and compare this code and try to optimize it. */
     body {
         font-size: 1.375em;
     }
-    article p, article ul {
+    article p, article ul, aside p {
         width: 43.75rem;
         margin: 0 auto 1.618em;
         color: #444;
@@ -220,15 +265,13 @@ nav a {
         text-align: center;
         line-height: 1.096em;
         color: #222;
+        font-size: 1.773em;
+        max-width: 40rem;
     }
     h1 {
         font-size: 4.236em;
         max-width: 60rem;
         margin-top: 0;
-    }
-    h2 {
-        font-size: 1.773em;
-        max-width: 700px;
     }
     .intro p {
         font-size: 1.618em;
@@ -236,26 +279,16 @@ nav a {
         line-height: 1.292em;
         max-width: 43.75rem;
         margin: auto;
-        text-align: left;
     }
     blockquote {
-        font-family: Georgia, Times, Serif;
         font-size: 2.618em;
-        font-style: italic;
-        max-width: 1000px;
+        max-width: 60rem;
         margin: 1.096em auto;
-        text-align: center;
         line-height: 1.618em;
-        color: #222;
     }
     blockquote footer {
-        font-family: "pt-sans", sans-serif;
-        font-size: 0.395em;
-        font-style:normal;
-        color: #444;
-        border-top: 1px solid #444;
-        display: table;
-        margin: 1.033em auto;
+        font-size: 0.5em;
+        margin: 1.033em auto 0;
     }
 }
 
