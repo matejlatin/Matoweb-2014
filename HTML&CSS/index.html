@@ -10,9 +10,15 @@
     <meta name="twitter:creator" content="@matejlatin">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="style.css?v=124">
+    <link rel="stylesheet" href="type.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Matoweb 2014</title>
 </head>
 <body>
+    <header class="cf">
+        <div class="logo">MW</div>
+        <div class="btnMenu"><a href="javascript:void(0)">N</a></div>
+    </header>
     <div class="menuToggle">
         <nav>
             <a href="javascript:void(0)" class="btnCloseMenu">&nbsp;</a>
@@ -32,11 +38,8 @@
     </div>
     <div  class="intro introDark">
         <div class="verticalCenter">
-            <header class="cf">
-                <div class="logo">MW</div>
-                <div class="btnMenu"><a href="javascript:void(0)">N</a></div>
-            </header>
             <h1>Manage Your Day-To-Day Book Review</h1>
+            <time datetime="2012-08-30" pubdate>August 30, 2012</time>
             <p>You can't try to do things, you must simply do them. This book is full of advices on how to become productive.</p> <!-- Limit to 110 chars. --></div>
         </div>
     <article class="cf">
@@ -84,6 +87,12 @@
         /* Set height of elements */
         var wh = $(window).height();
         var ww = $(window).width();
+        var hh = $('header').outerHeight();
+        $(document).ready(function(){
+            if (ww <= 320){
+                $(".verticalCenter").css("padding-top", hh);
+            }
+        });
         //$('.intro').height(wh);
 
         /* Mobile Menu Toggle */

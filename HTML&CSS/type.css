@@ -1,15 +1,17 @@
 /* Main Text */
-article p, article ul {
+article p, article ul, aside p {
     margin: 0 5% 1.756em;
     color: #444;
     line-height: 1.5em;
     font-weight: normal;
 }
 .intro p {
-    font-size: 1.375em;
+    font-size: 1.292em;
     font-weight: 300;
     line-height: 1.292em;
-    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;;
+    text-align: left;
 }
 blockquote {
     font-family: Georgia, Times, Serif;
@@ -21,14 +23,28 @@ blockquote {
     color: #222;
 }
 blockquote footer {
-    font-family: "pt-sans", sans-serif;
+    font-family: Georgia, serif;
     font-size: 0.444em;
     font-style:normal;
     color: #444;
     border-top: 1px solid #444;
     display: table;
-    margin: 1.171em auto;
+    margin: 1.171em auto 0;
+    padding: 0 1em;
 }
+a.tweetable {
+    text-decoration: none;
+}
+aside section h3 {
+    margin: 0.6em 1em;
+}
+aside a {
+    text-decoration: none;
+    padding: 0.3em 0.7em;;
+    border: solid 1px;
+}
+/* TODO put together all the links under LINKS section*/
+
 /* Headings */
 h1, h2 {
     margin: 2.25em auto 0.667em;
@@ -36,14 +52,20 @@ h1, h2 {
     line-height: 1.171em;
 }
 h1 {
+    margin: 0 auto;
     font-size: 2.25em;
+    padding: 0 3%;
 }
 h2 {
     font-size: 1.756em;
     max-width: 80%;
 }
+h3 {
+    font-size: 1.5em;
+}
+
 /* Links */
-p a {
+a {
     color: #83649e;
     text-decoration: underline;
 }
@@ -56,6 +78,9 @@ a:visited {
 /* Light & Dark UI */
 .introDark, .introDark a {
     color: #222;
+}
+.introLight, introLight a {
+    color: #fff;
 }
 nav a {
     color: #fff;

@@ -44,7 +44,7 @@ article p:last-child {
 aside {
     background: #f6f6f6;
     text-align: center;
-    padding: 5% 5%;
+    padding: 10% 5%;
 }
 aside section {
     padding: 2% 0 5%;
@@ -62,6 +62,10 @@ aside + aside {
 }
 .tweet {
     opacity: 0;
+}
+time {
+    display: table;
+    margin: 1em auto;
 }
 
 /* Navigation */
@@ -157,139 +161,6 @@ nav>ul>li>ul {
     margin: 0;
     padding: 0;
     position: relative;
-}
-
-/* Main Text */
-article p, article ul {
-    margin: 0 5% 1.756em;
-    color: #444;
-    line-height: 1.5em;
-    font-weight: normal;
-}
-.intro p {
-    font-size: 1.292em;
-    font-weight: 300;
-    line-height: 1.292em;
-    margin-left: 5%;
-    margin-right: 5%;;
-    text-align: left;
-}
-blockquote {
-    font-family: Georgia, Times, Serif;
-    font-size: 2.25em;
-    font-style: italic;
-    margin: 1.171em auto;
-    text-align: center;
-    line-height: 1.5em;
-    color: #222;
-}
-blockquote footer {
-    font-family: Georgia, serif;
-    font-size: 0.444em;
-    font-style:normal;
-    color: #444;
-    border-top: 1px solid #444;
-    display: table;
-    margin: 1.171em auto 0;
-    padding: 0 1em;
-}
-a.tweetable {
-    text-decoration: none;
-}
-aside section h3 {
-    margin: 0.6em 1em;
-}
-aside a {
-    text-decoration: none;
-    padding: 0.3em 0.7em;;
-    border: solid 1px;
-}
-/* TODO put together all the links under LINKS section*/
-
-/* Headings */
-h1, h2 {
-    margin: 2.25em auto 0.667em;
-    text-align: center;
-    line-height: 1.171em;
-}
-h1 {
-    font-size: 2.25em;
-}
-h2 {
-    font-size: 1.756em;
-    max-width: 80%;
-}
-h3 {
-    font-size: 1.5em;
-}
-
-/* Links */
-a {
-    color: #83649e;
-    text-decoration: underline;
-}
-a:visited {
-    text-decoration: none;
-}
-.intro a {
-    text-decoration: none;
-}
-/* Light & Dark UI */
-.introDark, .introDark a {
-    color: #222;
-}
-.introLight, introLight a {
-    color: #fff;
-}
-nav a {
-    color: #fff;
-    font-size: 2em;
-    font-family: "museo-sans", sans-serif;
-    text-decoration: none;
-}
-
-/* Media queries */ /* TODO Fix the media queries for specific devices */
-@media all and (min-width: 43.75rem){ /* TODO Check and compare this code and try to optimize it. */
-    body {
-        font-size: 1.375em;
-    }
-    article p, article ul, aside p {
-        width: 43.75rem;
-        margin: 0 auto 1.618em;
-        color: #444;
-        line-height: 1.618em;
-        font-weight: normal;
-    }
-    h2 {
-        margin: 1.773em auto 0.618em;
-        text-align: center;
-        line-height: 1.096em;
-        color: #222;
-        font-size: 1.773em;
-        max-width: 40rem;
-    }
-    h1 {
-        font-size: 4.236em;
-        max-width: 60rem;
-        margin-top: 0;
-    }
-    .intro p {
-        font-size: 1.618em;
-        font-weight: 300;
-        line-height: 1.292em;
-        max-width: 43.75rem;
-        margin: auto;
-    }
-    blockquote {
-        font-size: 2.618em;
-        max-width: 60rem;
-        margin: 1.096em auto;
-        line-height: 1.618em;
-    }
-    blockquote footer {
-        font-size: 0.5em;
-        margin: 1.033em auto 0;
-    }
 }
 
 /* Minor Fixes */
