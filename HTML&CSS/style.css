@@ -25,7 +25,7 @@ body, html {
     font-size: 100%; /* change to 1.375 for desktop */
     height: 100%;
 }
-p, div, section, article, footer, header {
+p, div, section, article, footer, header, aside {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -34,15 +34,19 @@ article p:last-child {
     padding-bottom: 3em;
 }
 .intro {
-    background: url(images/manage.jpg) center center;
+    background: url(images/posts/manage.jpg) center center;
     background-size: cover;
     width: 100%;
     height: 100%;
     margin-bottom: 2.618em;
     display: table;
 }
-aside {
+.otherArticles {
     background: #f6f6f6;
+    display: table-cell;
+    vertical-align: middle;
+}
+aside {
     text-align: center;
     padding: 10% 5%;
 }
@@ -50,18 +54,19 @@ aside section {
     padding: 2% 0 5%;
 }
 #deadEnd {
-    background: url(images/post-thumbnails/dead-end.jpg) center center no-repeat;
+    background: url(images/posts/dead-end.jpg) center center no-repeat;
     background-size: contain;
 }
 #manage {
-    background: url(images/post-thumbnails/manage-your-day.jpg) center center no-repeat;
+    background: url(images/posts/manage-your-day.jpg) center center no-repeat;
     background-size: contain;
 }
 aside + aside {
-    margin-top: 4px;
+    border-top: 1px solid #fff;
 }
 .tweet {
     opacity: 0;
+    fill: #eaeaea;
 }
 time {
     display: table;
@@ -80,27 +85,23 @@ header {
 .headerWhiteBg {
     background: rgba(255,255,255,0.9);
 }
-.btnCloseMenu, .logo, .btnMenu {
+.logo, .btnMenu {
     width: 50px;
     height: 50px;
-    text-indent: -9999px;
 }
 .btnCloseMenu {
     position: fixed;
     margin-top: 3%;
-    background: url(images/btnClose.png);
     background-size: contain;
     right: 3%;
-    display: none;
+}
+.icnClose {
+    fill: #fff;
 }
 .logo {
-    background: url(images/bgLogo.png);
-    background-size: contain;
     float: left;
 }
 .btnMenu {
-    background: url(images/btnMenu.png);
-    background-size: contain;
     float: right;
 }
 .menuToggle, nav {
@@ -110,7 +111,7 @@ header {
 }
 .menuToggle {
     display: none;
-    background: url(images/manage.jpg) center center;
+    background: url(images/posts/manage.jpg) center center;
     background-size: cover;
     z-index: 9000;
 }
@@ -150,12 +151,13 @@ nav li a, nav li ul {
     display: inline-block;
     background-size: contain;
     margin: 0 10px;
+    font-size: 1rem;
 }
-.tw a {
-    background: url(images/icnTw@2x.png);
+.tw {
+    fill: #fff;
 }
-.dr a {
-    background: url(images/icnDr@2x.png);
+.dr {
+    fill: #fff;
 }
 nav>ul>li>ul {
     margin: 0;
