@@ -5,13 +5,16 @@ article p, article ul, aside p {
     line-height: 1.5em;
     font-weight: normal;
 }
-.intro p {
+.intro p, .introVideo p {
     font-size: 1.292em;
     font-weight: 300;
     line-height: 1.292em;
     margin-left: 5%;
     margin-right: 5%;;
     text-align: left;
+}
+.home p {
+    text-align: center;
 }
 blockquote {
     font-family: Georgia, Times, Serif;
@@ -32,24 +35,13 @@ blockquote footer {
     margin: 1.171em auto 0;
     padding: 0 1em;
 }
-a.tweetable {
-    text-decoration: none;
-}
-aside section h3 {
-    margin: 0.6em auto;
-}
-aside a {
-    text-decoration: none;
-    padding: 0.3em 0.7em;;
-    border: solid 1px;
-}
-/* TODO put together all the links under LINKS section*/
 
 /* Headings */
 h1, h2 {
     margin: 2.25em auto 0.667em;
     text-align: center;
     line-height: 1.171em;
+    color: #222;
 }
 h1 {
     margin: 0 auto;
@@ -62,6 +54,10 @@ h2 {
 }
 h3 {
     font-size: 1.5em;
+    color: #222;
+}
+aside section h3 {
+    margin: 0.6em auto;
 }
 
 /* Links */
@@ -75,16 +71,17 @@ a:visited {
 .intro a {
     text-decoration: none;
 }
-/* Light & Dark UI */
-.introDark, .introDark a {
-    color: #222;
-}
-.introLight, introLight a {
-    color: #fff;
-}
 nav a {
     color: #fff;
     font-size: 2em;
     font-family: "museo-sans", sans-serif;
+    text-decoration: none;
+}
+aside a {
+    text-decoration: none;
+    padding: 0.3em 0.7em;;
+    border: solid 1px;
+}
+a.tweetable {
     text-decoration: none;
 }

@@ -1,5 +1,7 @@
 @import url("normalize.css");
 
+/* Global Stuff */
+
 /* ClearFix */
 .cf:before,
 .cf:after {
@@ -17,6 +19,10 @@
 .verticalCenter {
     display: table-cell;
     vertical-align: middle;
+}
+
+/* Backgrounds */
+.whiteBg {
     background: rgba(255,255,255,0.7);
 }
 
@@ -30,11 +36,20 @@ p, div, section, article, footer, header, aside {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+/*
 article p:last-child {
     padding-bottom: 3em;
 }
+*/
 .intro {
     background: url(images/posts/manage.jpg) center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2.618em;
+    display: table;
+}
+.introVideo {
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -71,6 +86,24 @@ aside + aside {
 time {
     display: table;
     margin: 1em auto;
+}
+.twFollow {
+    display: block;
+    height: 70px;
+    width: 200px;
+    margin: 1em auto 3em;
+    text-align: center;
+    text-decoration: none;
+}
+.home {
+    color: #000;
+}
+video#bgvid {
+    position: absolute; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
 }
 
 /* Navigation */
@@ -123,7 +156,7 @@ nav {
 nav>ul {
     list-style: none;
     position: absolute;
-    bottom: 20%;
+    top: 20%;
     padding: 0;
     margin: 0;
     display: table;
