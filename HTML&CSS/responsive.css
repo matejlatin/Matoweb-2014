@@ -1,5 +1,5 @@
 /* Media queries */
-@media only screen and (min-device-width: 43.75rem){ /* TODO Check and compare this code and try to optimize it. */
+@media  screen and (min-width: 43.75rem), (min-width: 700px), (device-width: 768px){ /* TODO Check and compare this code and try to optimize it. */
     body {
         font-size: 1.375em;
     }
