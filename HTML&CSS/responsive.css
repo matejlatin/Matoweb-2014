@@ -1,5 +1,5 @@
 /* Media queries */
-@media only screen and (min-device-width: 43.75rem){ /* TODO Check and compare this code and try to optimize it. */
+@media screen and (min-device-width: 43.75rem){ /* TODO Check and compare this code and try to optimize it. */
     body {
         font-size: 1.375em;
     }
@@ -50,7 +50,7 @@
 /* Minor Fixes */
 
 /* Next & Prev article on desktop */
-@media only screen and (min-device-width: 50rem){
+@media screen and (min-device-width: 50rem){
     aside {
         padding: 5%;
         width: 50%;
@@ -69,7 +69,7 @@
 
 
 /* Screen smaller than 480 px fix */
-@media only screen and (max-device-height: 480px){
+@media screen and (max-device-height: 480px){
     nav>ul {
         top: 13%;
         height: 70%;
