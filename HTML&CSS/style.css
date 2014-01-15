@@ -105,6 +105,27 @@ video#bgvid {
     background: url(polina.jpg) no-repeat;
     background-size: cover;
 }
+p + figure {
+    margin: 4em auto;
+}
+figure {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+figure img {
+    width: 100%;
+}
+img + figcaption {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #999;
+    margin: 1em auto 0;
+    max-width: 43.75em;
+    line-height: 1.618;
+    padding: 0 5%;
+}
 
 /* Navigation */
 header {

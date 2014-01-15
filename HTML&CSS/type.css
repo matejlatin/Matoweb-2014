@@ -85,3 +85,7 @@ aside a {
 a.tweetable {
     text-decoration: none;
 }
+figcaption a {
+    font-family: Georgia, serif;
+    color: #999;
+}
