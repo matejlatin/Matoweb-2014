@@ -5,10 +5,10 @@ p, ul, ol {
     line-height: 1.5em;
     font-weight: normal;
 }
-ul li, ol li {
+article ul li, article ol li {
     margin: 0 0 0.8em;
 }
-ol, ul {
+article ol, article ul {
     padding-left: 1.3em;
 }
 .intro p, .introVideo p {
