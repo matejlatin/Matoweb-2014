@@ -1,9 +1,15 @@
 /* Main Text */
-article p, article ul, aside p {
+p, ul, ol {
     margin: 0 5% 1.756em;
     color: #444;
     line-height: 1.5em;
     font-weight: normal;
+}
+ul li, ol li {
+    margin: 0 0 0.8em;
+}
+ol, ul {
+    padding-left: 1.3em;
 }
 .intro p, .introVideo p {
     font-size: 1.292em;

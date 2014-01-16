@@ -3,7 +3,7 @@
     body {
         font-size: 1.375em;
     }
-    article p, article ul {
+    p, ul, ol {
         width: 43.75rem;
         margin: 0 auto 1.618em;
         color: #444;
@@ -50,7 +50,7 @@
 /* Minor Fixes */
 
 /* Next & Prev article on desktop */
-@media screen and (min-device-width: 50rem){
+@media screen and (min-width: 50rem){
     aside {
         padding: 5%;
         width: 50%;
@@ -65,6 +65,9 @@
         width: 90%;
         margin: 0 auto 1rem;
     }
+    ol, ul {
+    padding-left: 2.5em;
+}
 }
 
 
