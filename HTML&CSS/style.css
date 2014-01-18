@@ -30,8 +30,9 @@
 body, html {
     font-size: 100%; /* change to 1.375 for desktop */
     height: 100%;
+    background: #fff;
 }
-p, div, section, article, footer, header, aside {
+p, div, section, article, footer, header, aside, blockquote {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -116,16 +117,6 @@ figure {
 figure img {
     width: 100%;
 }
-img + figcaption {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 1rem;
-    color: #999;
-    margin: 1em auto 0;
-    max-width: 43.75em;
-    line-height: 1.618;
-    padding: 0 5%;
-}
 
 /* Navigation */
 header {
@@ -139,18 +130,17 @@ header {
 .headerWhiteBg {
     background: rgba(255,255,255,0.9);
 }
+/*
 .logo, .btnMenu {
     width: 50px;
     height: 50px;
 }
+*/
 .btnCloseMenu {
     position: fixed;
     margin-top: 3%;
     background-size: contain;
     right: 3%;
-}
-.icnClose {
-    fill: #fff;
 }
 .logo {
     float: left;
@@ -194,6 +184,7 @@ nav li a, nav li ul {
     width: 100%;
     display: table-cell;
     vertical-align: middle;
+/*    font-family: "museo-sans", sans-serif;*/
 }
 .navSocial li {
     width: 50%;
@@ -218,8 +209,20 @@ nav>ul>li>ul {
     padding: 0;
     position: relative;
 }
+.mainMenu {
+    display: none;
+}
 
 /* Minor Fixes */
 img.typekit-badge {
     display: none!important;
+}
+header a {
+    color: #222;
+}
+header.light {
+    fill: white;
+}
+header.light a {
+    color: #fff;
 }

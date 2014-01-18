@@ -1,12 +1,12 @@
 /* Media queries */
-@media  screen and (min-width: 43.75rem), (min-width: 700px), (device-width: 768px){ /* TODO Check and compare this code and try to optimize it. */
+@media  screen and (min-width: 43.75rem), (min-width: 700px), (device-width: 768px){
+    /* 22px - golden ration */
     body {
         font-size: 1.375em;
     }
     p, ul, ol {
         width: 43.75rem;
         margin: 0 auto 1.618em;
-        color: #444;
         line-height: 1.618em;
     }
     h1 {
@@ -43,7 +43,7 @@
     }
     blockquote footer {
         font-size: 0.5em;
-        margin: 1.033em auto 0;
+        margin: 1.096em auto 0;
     }
 }
 
@@ -63,7 +63,8 @@
     }
     aside p {
         width: 90%;
-        margin: 0 auto 1rem;
+        max-width: 43.75;
+        margin: 0 auto 1em;
     }
     ol, ul {
     padding-left: 2.5em;
@@ -79,5 +80,36 @@
     }
     nav li {
         height: 22%;
+    }
+}
+/* Main menu on screens larger than 960px */
+@media screen and (min-width: 960px){
+    .btnMenu {
+        display: none;
+    }
+    .mainMenu {
+        float: right;
+        display: block;
+    }
+    .mainMenu ul {
+        list-style: none;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .mainMenu li {
+        display: inline;
+        margin: 0 0.5em;
+    }
+    .mainMenu a {
+        font-family: "soleil", sans-serif;
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+    .mainMenu ul li:last-child {
+        margin-right: 0;
     }
 }

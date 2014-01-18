@@ -1,15 +1,18 @@
-/* Main Text */
+/* Main Text - 16px perfect fifth */
 p, ul, ol {
-    margin: 0 5% 1.756em;
+    margin: 0 5% 1.707em;
     color: #444;
     line-height: 1.5em;
     font-weight: normal;
+}
+p strong {
+    font-weight: 700;
 }
 article ul li, article ol li {
     margin: 0 0 0.8em;
 }
 article ol, article ul {
-    padding-left: 1.3em;
+    padding-left: 1.292em;
 }
 .intro p, .introVideo p {
     font-size: 1.292em;
@@ -18,6 +21,7 @@ article ol, article ul {
     margin-left: 5%;
     margin-right: 5%;;
     text-align: left;
+    color: #222;
 }
 .home p {
     text-align: center;
@@ -26,7 +30,8 @@ blockquote {
     font-family: Georgia, Times, Serif;
     font-size: 2.25em;
     font-style: italic;
-    margin: 1.171em auto;
+    margin: 1.138em auto;
+    padding: 0 3%;
     text-align: center;
     line-height: 1.5em;
     color: #222;
@@ -38,15 +43,14 @@ blockquote footer {
     color: #444;
     border-top: 1px solid #444;
     display: table;
-    margin: 1.171em auto 0;
+    margin: 1.138em auto 0;
     padding: 0 1em;
 }
 
 /* Headings */
 h1, h2 {
-    margin: 2.25em auto 0.667em;
     text-align: center;
-    line-height: 1.171em;
+    line-height: 1.138em;
     color: #222;
 }
 h1 {
@@ -55,7 +59,8 @@ h1 {
     padding: 0 3%;
 }
 h2 {
-    font-size: 1.756em;
+    font-size: 1.707em;
+    margin: 1.707em auto 0.667em;
     max-width: 80%;
 }
 h3 {
@@ -90,6 +95,16 @@ aside a {
 }
 a.tweetable {
     text-decoration: none;
+}
+img + figcaption {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 0.759em;
+    color: #999;
+    margin: 1.138em auto 0;
+    max-width: 43.75em;
+    line-height: 1.5;
+    padding: 0 5%;
 }
 figcaption a {
     font-family: Georgia, serif;
