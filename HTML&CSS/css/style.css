@@ -160,7 +160,7 @@ header {
     z-index: 9000;
 }
 nav {
-    background:  rgba(131, 100, 158, 0.8);
+    background:  rgba(95, 146, 203, 0.8);
     z-index: 10000;
     display: block;
 }
@@ -224,6 +224,13 @@ header a {
     fill: white;
     color: white;
 }
+.blue  {
+    fill: #4793e0;
+    color: #4793e0;
+}
 header.light a {
     color: #fff;
+}
+header.blue a {
+    color: #4793e0;
 }

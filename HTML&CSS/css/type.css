@@ -14,7 +14,7 @@ article ul li, article ol li {
 article ol, article ul {
     padding-left: 1.292em;
 }
-.intro p, .introVideo p {
+.extract {
     font-size: 1.292em;
     font-weight: 300;
     line-height: 1.292em;
@@ -72,15 +72,16 @@ aside section h3 {
 }
 
 /* Links */
-a {
-    color: #83649e;
-    text-decoration: underline;
+article p a {
+    color: #5f92cb;
+    text-decoration: none;
+    border-bottom: 1px solid #5f92cb;
 }
 a:visited {
     text-decoration: none;
 }
-.intro a {
-    text-decoration: none;
+a img {
+    border: 0;
 }
 nav a {
     color: #fff;
