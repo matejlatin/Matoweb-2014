@@ -70,6 +70,10 @@ h3 {
 aside section h3 {
     margin: 0.6em auto;
 }
+aside section h4 {
+    font-size: 1rem;
+    color: #ababab;
+}
 
 /* Links */
 article p a {
@@ -91,8 +95,12 @@ nav a {
 }
 aside a {
     text-decoration: none;
-    padding: 0.3em 0.7em;;
-    border: solid 1px;
+    padding: 0.5em 0.7em;
+    background: #000;
+    color: #fff;
+    display: block;
+    max-width: 180px;
+    margin: 2% auto;
 }
 a.tweetable {
     text-decoration: none;
