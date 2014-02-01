@@ -32,7 +32,7 @@ body, html {
     height: 100%;
     background: #fff;
 }
-p, div, section, article, footer, header, aside, blockquote, ul, ol {
+p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -57,28 +57,15 @@ article p:last-child {
     margin-bottom: 2.618em;
     display: table;
 }
-.otherArticles {
-    background: #f6f6f6;
-    display: table-cell;
-    vertical-align: middle;
-}
 aside {
     text-align: center;
-    padding: 10% 5%;
+/*    padding: 10% 5%;*/
+    background: url(../images/posts/dead.jpg) center center no-repeat;
+    background-size: cover;
 }
 aside section {
-    padding: 2% 0 5%;
-}
-#deadEnd {
-    background: url(../images/posts/dead-end.jpg) center center no-repeat;
-    background-size: contain;
-}
-#manage {
-    background: url(../images/posts/manage-your-day.jpg) center center no-repeat;
-    background-size: contain;
-}
-aside + aside {
-    border-top: 1px solid #fff;
+    padding: 4% 0;
+    background: rgba(246,246,246, 0.9);
 }
 .tweet {
     opacity: 0;

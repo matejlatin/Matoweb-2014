@@ -52,19 +52,12 @@
 /* Next & Prev article on desktop */
 @media screen and (min-width: 50rem){
     aside {
-        padding: 5%;
-        width: 50%;
-        float: right;
-    }
-    aside + aside {
-        margin: 0;
-        border-right: 1px solid #fff;
-        border-top: 0;
+/*        padding: 5%;*/
+/*        width: 50%;*/
     }
     aside p {
         width: 90%;
-        max-width: 43.75;
-        margin: 0 auto 1em;
+        max-width: 43.75rem;
     }
     ol, ul {
     padding-left: 2.5em;
