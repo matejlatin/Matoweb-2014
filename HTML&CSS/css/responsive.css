@@ -48,6 +48,24 @@
 }
 
 /* Minor Fixes */
+@media screen and (max-height: 400px) and (orientation: landscape){
+    nav>ul {
+        right: 5%;
+        bottom: 10%;
+        width: 50%;
+        height: 50%;
+        margin-top: 50px;
+    }
+    nav li a {
+        width: 25%;
+        text-align: right;
+        padding: 5px 0;
+    }
+
+    .navSocial {
+        display: none;
+    }
+}
 
 /* Next & Prev article on desktop */
 @media screen and (min-width: 50rem){

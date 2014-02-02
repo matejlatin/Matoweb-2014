@@ -37,6 +37,15 @@ p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.logo {
+    text-align: left;
+    float: left;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+    height: 100%;
+
+}
 .intro {
     background: url(../images/posts/manage.jpg) center center;
     background-size: cover;
@@ -80,13 +89,6 @@ time {
 }
 .home {
     color: #000;
-}
-video#bgvid {
-    position: absolute; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
 }
 p + figure {
     margin: 4em auto;
