@@ -194,7 +194,7 @@ img.typekit-badge {
 header a {
     color: #222;
 }
-.light, .light h1, .light p.intro  { /* FIXME try changing color to white by adding only one style */
+.light, .light h1, .light p.intro  {
     fill: white;
     color: white;
 }
