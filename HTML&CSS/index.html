@@ -15,8 +15,10 @@
     <title>Matoweb 2014</title>
 </head>
 <body>
-    <header class="cf">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><style>.style0{clip-rule:    evenodd;fill-rule:    evenodd;}</style><path class="logo" d="M24.875 49.875c-13.807 0-25-11.193-25-25s11.193-25 25-25s25 11.2 25 25 S38.682 49.9 24.9 49.875z M24.875 1.375c-12.979 0-23.5 10.521-23.5 23.5s10.521 23.5 23.5 23.5s23.5-10.521 23.5-23.5 S37.854 1.4 24.9 1.375z M36.225 31.894l-4.545-8.008l-4.563 8.008l-2.5-4.406l-2.079-3.618l-2.821 4.986l0.025 0.044h-0.05 H16.27L13.38 23.87l-2.846 5.031H7.112l6.268-11.045l4.613 8.008l4.545-8.008l3.647 6.432l0.932 1.592l2.84-5.031h3.422h0.05 l-0.025 0.044l2.821 4.986l2.89-5.031h3.472L36.225 31.894z"/></svg>
+    <header class="cf light">
+        <div class="logo">
+            <h1 class="verticalCenter">mato</h1>
+        </div>
         <a href="javascript:void(0)" class="btnMenu">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 33.5v-3h19v3H15.5z M15.5 23.5h19v3h-19V23.5z M15.5 16.5h19v3h-19V16.5z"/></svg>
         </a>
@@ -47,7 +49,7 @@
             </ul>
         </nav>
     </div>
-    <div  class="intro introDark">
+    <div  class="intro light">
         <div class="verticalCenter whiteBg">
             <h1>Manage Your Day-To-Day Book Review</h1>
             <time datetime="2012-08-30" pubdate>August 30, 2012</time>
@@ -139,11 +141,11 @@
                 if (st > lastScrollTop){
                     $('header').fadeOut(); // FIXME Header fades out only on the end of swipe on mobile. Try jQuery Mobile.
                 } else {
-                    $('header').addClass("headerWhiteBg").fadeIn();
+                    $('header').addClass("headerWhiteBg").removeClass("light").fadeIn();
                 }
             }
             if (st <= 0){
-                $("header").removeClass("headerWhiteBg", 300).fadeIn();
+                $("header").removeClass("headerWhiteBg", 300).addClass("light").fadeIn();
             }
            lastScrollTop = st;
         });

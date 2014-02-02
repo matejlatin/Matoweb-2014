@@ -71,8 +71,21 @@ aside section h3 {
     margin: 0.6em auto;
 }
 aside section h4 {
-    font-size: 1rem;
+    font-size: 14px;
     color: #ababab;
+}
+.logo {
+    text-align: left;
+    float: left;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    height: 100%;
+
+}
+.logo h1 {
+    font-size: 30px;
+    height: 50px;
 }
 
 /* Links */

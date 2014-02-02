@@ -51,9 +51,8 @@
 
 /* Next & Prev article on desktop */
 @media screen and (min-width: 50rem){
-    aside {
-/*        padding: 5%;*/
-/*        width: 50%;*/
+    aside section {
+        padding: 4% 0;
     }
     aside p {
         width: 90%;
@@ -101,5 +100,8 @@
         font-family: "soleil", sans-serif;
         text-decoration: none;
         font-size: 0.8em;
+    }
+    header {
+        padding: 0.8%;
     }
 }
