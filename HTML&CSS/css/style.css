@@ -42,7 +42,7 @@ p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
     float: left;
     padding: 0;
     margin: 0;
-    padding-left: 5px;
+    padding-left: 10px;
     height: 100%;
 
 }
@@ -198,13 +198,6 @@ header a {
     fill: white;
     color: white;
 }
-.blue  {
-    fill: #4793e0;
-    color: #4793e0;
-}
 header.light a {
     color: #fff;
-}
-header.blue a {
-    color: #4793e0;
 }

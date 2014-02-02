@@ -48,38 +48,40 @@
 }
 
 /* Minor Fixes */
-@media screen and (max-height: 400px) and (orientation: landscape){
-    nav>ul {
-        right: 5%;
-        bottom: 10%;
-        width: 50%;
-        height: 50%;
-        margin-top: 50px;
-    }
-    nav li a {
-        width: 25%;
-        text-align: right;
-        padding: 5px 0;
+    /* Navigation menu for landscape positon  */
+    @media screen and (max-height: 400px) and (orientation: landscape){
+        nav>ul {
+            right: 5%;
+            bottom: 10%;
+            width: 50%;
+            height: 50%;
+            margin-top: 50px;
+        }
+        nav li a {
+            width: 25%;
+            text-align: right;
+            padding: 5px 0;
+        }
+
+        .navSocial {
+            display: none;
+        }
     }
 
-    .navSocial {
-        display: none;
+    /* Next article on desktop */
+    @media screen and (min-width: 50rem){
+        aside section {
+            padding: 4% 0;
+        }
+        aside p {
+            width: 90%;
+            max-width: 43.75rem;
+        }
+        /*  List padding fix  */
+        ol, ul {
+        padding-left: 2.5em;
     }
-}
-
-/* Next & Prev article on desktop */
-@media screen and (min-width: 50rem){
-    aside section {
-        padding: 4% 0;
     }
-    aside p {
-        width: 90%;
-        max-width: 43.75rem;
-    }
-    ol, ul {
-    padding-left: 2.5em;
-}
-}
 
 
 /* Screen smaller than 480 px fix */
@@ -112,7 +114,7 @@
     }
     .mainMenu li {
         display: inline;
-        margin: 0 0.5em;
+        margin: 0 1em;
     }
     .mainMenu a {
         font-family: "soleil", sans-serif;
