@@ -1,5 +1,5 @@
 /* Media queries */
-@media  screen and (min-width: 43.75rem), (min-width: 700px), (device-width: 768px){
+@media  screen and (min-width: 43.75rem), (min-width: 700px), (min-device-width: 768px){
     /* 22px - golden ration */
     body {
         font-size: 1.375em;
@@ -45,6 +45,12 @@
         font-size: 0.5em;
         margin: 1.096em auto 0;
     }
+    .btnCloseMenu {
+        position: fixed;
+        margin-top: 1.5%;
+        background-size: contain;
+        right: 1.5%;
+    }
 }
 
 /* Minor Fixes */
@@ -84,44 +90,44 @@
     }
 
 
-/* Screen smaller than 480 px fix */
-@media screen and (max-device-height: 480px){
-    nav>ul {
-        top: 13%;
-        height: 70%;
+    /* Screen smaller than 480 px fix */
+    @media screen and (max-device-height: 480px){
+        nav>ul {
+            top: 13%;
+            height: 70%;
+        }
+        nav li {
+            height: 22%;
+        }
     }
-    nav li {
-        height: 22%;
+    /* Main menu on screens larger than 960px */
+    @media screen and (min-width: 960px){
+        .btnMenu {
+            display: none;
+        }
+        .mainMenu {
+            float: right;
+            display: block;
+        }
+        .mainMenu ul {
+            list-style: none;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            height: 50px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .mainMenu li {
+            display: inline;
+            margin: 0 1em;
+        }
+        .mainMenu a {
+            font-family: "soleil", sans-serif;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+        header {
+            padding: 0.8%;
+        }
     }
-}
-/* Main menu on screens larger than 960px */
-@media screen and (min-width: 960px){
-    .btnMenu {
-        display: none;
-    }
-    .mainMenu {
-        float: right;
-        display: block;
-    }
-    .mainMenu ul {
-        list-style: none;
-        width: auto;
-        margin: 0;
-        padding: 0;
-        height: 50px;
-        display: table-cell;
-        vertical-align: middle;
-    }
-    .mainMenu li {
-        display: inline;
-        margin: 0 1em;
-    }
-    .mainMenu a {
-        font-family: "soleil", sans-serif;
-        text-decoration: none;
-        font-size: 0.8em;
-    }
-    header {
-        padding: 0.8%;
-    }
-}

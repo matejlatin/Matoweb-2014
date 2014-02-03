@@ -72,7 +72,8 @@ aside section h3 {
 }
 aside section h4 {
     font-size: 14px;
-    color: #ababab;
+    color: #969696;
+    font-weight: normal;
 }
 .logo h1 {
     font-size: 30px;
