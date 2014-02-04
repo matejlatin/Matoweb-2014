@@ -101,6 +101,7 @@
         }
         .post p {
             margin: 0 auto 1.7rem;
+            padding: 0;
         }
         .welcome {
             padding: 8% 0;
