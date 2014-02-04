@@ -8,13 +8,16 @@ p, ul, ol {
 p strong {
     font-weight: 700;
 }
+.post p {
+    margin: 0 auto 1.3rem;
+}
 article ul li, article ol li {
     margin: 0 0 0.8em;
 }
 article ol, article ul {
     padding-left: 1.292em;
 }
-.extract {
+.extract, .welcome {
     font-size: 1.292em;
     font-weight: 300;
     line-height: 1.292em;
@@ -22,9 +25,6 @@ article ol, article ul {
     margin-right: 5%;;
 /*    text-align: left;*/
     color: #222;
-}
-.home p {
-    text-align: center;
 }
 blockquote {
     font-family: Georgia, Times, Serif;
@@ -67,10 +67,11 @@ h3 {
     font-size: 1.5em;
     color: #222;
 }
-aside h3, aside h2 {
-    margin: 0.6em auto;
+aside h2, section h2 {
+    margin: 0 auto 1.3rem;
 }
-aside section h4 {
+aside h4, .post h4 {
+    margin: 0 auto 1.5rem;
     font-size: 14px;
     color: #969696;
     font-weight: normal;
@@ -99,14 +100,14 @@ nav a {
     font-family: "museo-sans", sans-serif;
     text-decoration: none;
 }
-aside a {
+aside a, .post a {
     text-decoration: none;
     padding: 0.5em 0.7em;
     background: #000;
     color: #fff;
     display: block;
     max-width: 140px;
-    margin: 2% auto;
+    margin: 0 auto 0.6rem;
 }
 a.tweetable {
     text-decoration: none;

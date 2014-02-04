@@ -64,8 +64,11 @@ p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
     margin: 0;
 }
 .welcome {
-    padding: 8% 0;
+    padding: 30% 0;
     border-bottom: 1px solid #ccc;
+}
+.welcome, .post {
+    margin: 0 auto 30%;
 }
 aside section {
     padding: 10% 0;
