@@ -1,6 +1,6 @@
 /* Media queries */
 @media  screen and (min-width: 43.75rem), (min-width: 700px), (min-device-width: 768px){
-    /* 22px - golden ration */
+    /* 22px - golden ratio */
     body {
         font-size: 1.375em;
     }
@@ -12,6 +12,9 @@
     h1 {
         font-size: 4.236em;
         max-width: 60rem;
+    }
+    .home h1 {
+        font-size: 3em;
     }
     h2 {
         margin: 1.773em auto 0.618em;
@@ -26,8 +29,11 @@
         max-width: 43.75rem;
         margin: 0 auto 1.618rem;
     }
-    .welcome, .post {
+    hr, .post {
         margin: 0 auto 8%;
+    }
+    .post a {
+        font-size: 1.2rem;
     }
     .home p {
         margin-top: 0.5em;
@@ -50,6 +56,27 @@
         margin-top: 1.5%;
         background-size: contain;
         right: 1.5%;
+    }
+    /*  List padding fix  */
+    ol, ul {
+        padding-left: 2.5em;
+    }
+    aside h3, section h2 {
+        margin: 0 auto 1.7rem;
+    }
+    aside h4, .post h4 {
+        margin: 0 auto 2rem;
+        font-size: 14px;
+        color: #969696;
+        font-weight: normal;
+    }
+    .post p {
+        margin: 0 auto 1.7rem;
+        padding: 0;
+    }
+    .welcome {
+        padding: 8% 0;
+        margin: 0 auto;
     }
 }
 
@@ -85,26 +112,6 @@
         aside p {
             width: 90%;
             max-width: 43.75rem;
-        }
-        /*  List padding fix  */
-        ol, ul {
-            padding-left: 2.5em;
-        }
-        aside h3, section h2 {
-            margin: 0 auto 1.7rem;
-        }
-        aside h4, .post h4 {
-            margin: 0 auto 2rem;
-            font-size: 14px;
-            color: #969696;
-            font-weight: normal;
-        }
-        .post p {
-            margin: 0 auto 1.7rem;
-            padding: 0;
-        }
-        .welcome {
-            padding: 8% 0;
         }
     }
 
@@ -153,5 +160,6 @@
     @media (-webkit-max-device-pixel-ratio: 1.5){
         p, ul, ol {
             font-weight: 300;
+            text-rendering: optimizeLegibility;
         }
     }

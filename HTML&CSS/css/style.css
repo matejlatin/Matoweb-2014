@@ -14,6 +14,26 @@
 .cf {
     *zoom: 1;
 }
+/* Border Box */
+p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a img {
+    border: 0;
+}
+hr {
+    width: 50px;
+    height: 4px;
+    margin: 0 auto 30%;
+    background: #b7b7b7;
+    border: none;
+}
+.home hr {
+    background: #fff;
+    margin: 2em auto 1.6em;
+}
 
 /* Align to vertical center */
 .verticalCenter {
@@ -35,11 +55,6 @@ body, html {
     font-size: 100%; /* change to 1.375 for desktop */
     height: 100%;
     background: #fff;
-}
-p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 .logo {
     text-align: left;
@@ -64,10 +79,10 @@ p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
     margin: 0;
 }
 .welcome {
+    margin: 0;
     padding: 30% 0;
-    border-bottom: 1px solid #ccc;
 }
-.welcome, .post {
+.post {
     margin: 0 auto 30%;
 }
 aside section {
@@ -96,9 +111,6 @@ time {
     margin: 1em auto 3em;
     text-align: center;
     text-decoration: none;
-}
-.home {
-    color: #000;
 }
 p + figure {
     margin: 4em auto;
@@ -168,7 +180,6 @@ nav li a, nav li ul {
     width: 100%;
     display: table-cell;
     vertical-align: middle;
-/*    font-family: "museo-sans", sans-serif;*/
 }
 .navSocial li {
     width: 50%;
@@ -204,10 +215,7 @@ img.typekit-badge {
 header a {
     color: #222;
 }
-.light, .light h1, .light p.intro  {
+.light, .light h1, header.light a  {
     fill: white;
     color: white;
-}
-header.light a {
-    color: #fff;
 }

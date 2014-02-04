@@ -1,4 +1,7 @@
 /* Main Text - 16px perfect fifth */
+html {
+    -webkit-font-smoothing: antialiased;
+}
 p, ul, ol {
     margin: 0 5% 1.707em;
     color: #444;
@@ -59,6 +62,9 @@ h1 {
     font-size: 2.25em;
     padding: 0 3%;
 }
+.home h1 {
+    font-size: 1.8em;
+}
 h2 {
     font-size: 1.707em;
     margin: 1.707em auto 0.667em;
@@ -92,14 +98,11 @@ article p a {
 a:visited {
     text-decoration: none;
 }
-a img {
-    border: 0;
-}
 nav a {
     color: #fff;
     font-size: 2em;
-    font-family: "museo-sans", sans-serif;
     text-decoration: none;
+    font-weight: 300;
 }
 aside a, .post a {
     text-decoration: none;
