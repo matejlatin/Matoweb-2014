@@ -20,6 +20,10 @@
     display: table-cell;
     vertical-align: middle;
 }
+/* Text align to center  */
+.txtCenter {
+    text-align: center;
+}
 
 /* Backgrounds */
 .whiteBg {
@@ -54,21 +58,24 @@ p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
     margin-bottom: 2.618em;
     display: table;
 }
-.introVideo {
+.home {
+    background: url(../images/index.jpg) center center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 2.618em;
-    display: table;
+    margin: 0;
 }
-aside {
-    text-align: center;
+.welcome {
+    padding: 8% 0;
+    border-bottom: 1px solid #ccc;
+}
+aside section {
+    padding: 10% 0;
+}
+body>aside {
 /*    padding: 10% 5%;*/
     background: url(../images/posts/dead.jpg) center center no-repeat;
     background-size: cover;
 }
-aside section {
-    padding: 10% 0;
+body>aside section {
     background: rgba(246,246,246, 0.9);
 }
 .tweet {
@@ -111,7 +118,7 @@ header {
     padding: 3%;
 }
 .headerWhiteBg {
-    background: rgba(250,250,250,0.9);
+    background: #f6f6f6;
 }
 .btnCloseMenu {
     position: fixed;

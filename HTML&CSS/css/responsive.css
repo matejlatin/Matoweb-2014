@@ -76,8 +76,11 @@
 
     /* Next article on desktop */
     @media screen and (min-width: 50rem){
-        aside section {
+        body>aside section {
             padding: 4% 0;
+        }
+        article aside section {
+            padding: 5% 0 0;
         }
         aside p {
             width: 90%;
@@ -86,7 +89,7 @@
         /*  List padding fix  */
         ol, ul {
         padding-left: 2.5em;
-    }
+        }
     }
 
 
@@ -129,5 +132,10 @@
         }
         header {
             padding: 0.8%;
+        }
+    /* LARGE screens modifications */
+    @media (-webkit-max-device-pixel-ratio: 1.5){
+        p, ul, ol {
+            font-weight: 300;
         }
     }

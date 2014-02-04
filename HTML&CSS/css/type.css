@@ -20,7 +20,7 @@ article ol, article ul {
     line-height: 1.292em;
     margin-left: 5%;
     margin-right: 5%;;
-    text-align: left;
+/*    text-align: left;*/
     color: #222;
 }
 .home p {
@@ -67,7 +67,7 @@ h3 {
     font-size: 1.5em;
     color: #222;
 }
-aside section h3 {
+aside h3, aside h2 {
     margin: 0.6em auto;
 }
 aside section h4 {
