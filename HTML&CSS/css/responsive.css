@@ -32,7 +32,7 @@
     hr, .post {
         margin: 0 auto 8%;
     }
-    .post a {
+    .btn {
         font-size: 1.2rem;
     }
     .home p {
@@ -144,9 +144,12 @@
             display: table-cell;
             vertical-align: middle;
         }
+    .mainMenu ul li:last-child {
+        margin-right: 0;
+    }
         .mainMenu li {
             display: inline;
-            margin: 0 1em;
+            margin: 0 0.8em;
         }
         .mainMenu a {
             font-family: "soleil", sans-serif;
@@ -154,12 +157,13 @@
             font-size: 0.8em;
         }
         header {
-            padding: 0.8%;
+            padding: 0.8% 1.7%;
         }
     /* LARGE screens modifications */
     @media (-webkit-max-device-pixel-ratio: 1.5){
         p, ul, ol {
             font-weight: 300;
             text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
         }
     }

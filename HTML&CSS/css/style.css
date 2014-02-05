@@ -61,9 +61,7 @@ body, html {
     float: left;
     padding: 0;
     margin: 0;
-    padding-left: 10px;
     height: 100%;
-
 }
 .intro {
     background: url(../images/posts/manage.jpg) center center;

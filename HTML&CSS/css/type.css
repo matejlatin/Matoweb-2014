@@ -1,7 +1,4 @@
 /* Main Text - 16px perfect fifth */
-html {
-    -webkit-font-smoothing: antialiased;
-}
 p, ul, ol {
     margin: 0 5% 1.707em;
     color: #444;
@@ -86,7 +83,7 @@ aside h4, .post h4 {
 .logo h1 {
     font-size: 30px;
     height: 50px;
-    padding-top:2px;
+    padding: 0;
 }
 
 /* Links */
@@ -104,7 +101,7 @@ nav a {
     text-decoration: none;
     font-weight: 300;
 }
-aside a, .post a {
+.btn {
     text-decoration: none;
     padding: 0.5em 0.7em;
     background: #000;
