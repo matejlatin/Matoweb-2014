@@ -165,7 +165,6 @@
     /* LARGE screens modifications */
     @media (-webkit-max-device-pixel-ratio: 1.5){
         p, ul, ol {
-            font-weight: 300;
             text-rendering: optimizeLegibility;
             -webkit-font-smoothing: antialiased;
         }
