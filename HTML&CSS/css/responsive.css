@@ -141,12 +141,11 @@
             margin: 0;
             padding: 0;
             height: 50px;
-            display: table-cell;
-            vertical-align: middle;
+            line-height: 2em;
         }
-    .mainMenu ul li:last-child {
-        margin-right: 0;
-    }
+        .mainMenu ul li:last-child {
+            margin-right: 0;
+        }
         .mainMenu li {
             display: inline;
             margin: 0 0.8em;
@@ -159,6 +158,10 @@
         header {
             padding: 0.8% 1.7%;
         }
+        .logo h1 {
+            padding: 0;
+        }
+    }
     /* LARGE screens modifications */
     @media (-webkit-max-device-pixel-ratio: 1.5){
         p, ul, ol {
