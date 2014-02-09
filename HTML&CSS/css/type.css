@@ -24,7 +24,6 @@ article ol, article ul {
     line-height: 1.292em;
     margin-left: 5%;
     margin-right: 5%;;
-/*    text-align: left;*/
     color: #222;
 }
 blockquote {
@@ -40,12 +39,11 @@ blockquote {
 blockquote footer {
     font-family: Georgia, serif;
     font-size: 0.444em;
-    font-style:normal;
+    font-style: normal;
     color: #444;
-    border-top: 1px solid #444;
-    display: table;
-    margin: 1.138em auto 0;
-    padding: 0 1em;
+}
+blockquote hr {
+    margin: 0.8em auto 0.5em;
 }
 
 /* Headings */
@@ -84,7 +82,7 @@ aside h4, .post h4 {
     font-size: 30px;
     height: 50px;
     padding: 0 0 0 10px;
-    line-height: 1.4;
+    line-height: 1.3;
     height: 50px;
 }
 
