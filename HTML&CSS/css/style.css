@@ -1,7 +1,5 @@
 @import url("normalize.css");
 
-/* Global Stuff */
-
 /* ClearFix */
 .cf:before,
 .cf:after {
@@ -20,6 +18,10 @@ p, div, section, article, footer, header, aside, blockquote, ul, ol, a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.light, .light h1, header.light a  {
+    fill: white;
+    color: white;
+}
 a img {
     border: 0;
 }
@@ -30,10 +32,6 @@ hr {
     background: #b7b7b7;
     border: none;
 }
-.home hr {
-    background: #fff;
-    margin: 2em auto 1.6em;
-}
 
 /* Align to vertical center */
 .verticalCenter {
@@ -43,11 +41,6 @@ hr {
 /* Text align to center  */
 .txtCenter {
     text-align: center;
-}
-
-/* Backgrounds */
-.whiteBg {
-    background: rgba(114,104,92,0.5);
 }
 
 /* HTML */
@@ -64,43 +57,13 @@ body, html {
     height: 100%;
 }
 .intro {
-    background: url(../images/posts/manage.jpg) center center;
-    background-size: cover;
     width: 100%;
     height: 100%;
     margin-bottom: 2.618em;
     display: table;
 }
-.home {
-    background: url(../images/index.jpg) center center;
-    background-size: cover;
-    margin: 0;
-}
-.welcome {
-    margin: 0;
-    padding: 30% 0;
-}
 .post {
     margin: 0 auto 30%;
-}
-aside section {
-    padding: 10% 0;
-}
-body>aside {
-/*    padding: 10% 5%;*/
-    background: url(../images/posts/dead.jpg) center center no-repeat;
-    background-size: cover;
-}
-body>aside section {
-    background: rgba(246,246,246, 0.9);
-}
-.tweet {
-    opacity: 0;
-    fill: #eaeaea;
-}
-time {
-    display: table;
-    margin: 1em auto;
 }
 .twFollow {
     display: block;
@@ -109,17 +72,6 @@ time {
     margin: 1em auto 3em;
     text-align: center;
     text-decoration: none;
-}
-p + figure {
-    margin: 4em auto;
-}
-figure {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-figure img {
-    width: 100%;
 }
 
 /* Navigation */
@@ -191,10 +143,7 @@ nav li a, nav li ul {
     margin: 0 10px;
     font-size: 1rem;
 }
-.tw {
-    fill: #fff;
-}
-.dr {
+.tw, .dr {
     fill: #fff;
 }
 nav>ul>li>ul {
@@ -210,10 +159,4 @@ nav>ul>li>ul {
 img.typekit-badge {
     display: none!important;
 }
-header a {
-    color: #222;
-}
-.light, .light h1, header.light a  {
-    fill: white;
-    color: white;
-}
+
