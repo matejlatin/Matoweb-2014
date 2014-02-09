@@ -11,6 +11,7 @@
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="css/style.css?v=124">
     <link rel="stylesheet" href="css/type.css">
+    <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Matoweb 2014</title>
 </head>
@@ -50,10 +51,9 @@
         </nav>
     </div>
     <div  class="intro light home">
-        <div class="verticalCenter whiteBg">
+        <div class="verticalCenter homeBg">
             <h1>I'm passionate about simple, clean & usable design.</h1>
-<!--            <hr>-->
-            <time datetime="2012-08-30" pubdate>Matej Latin</time>
+            <time>Matej Latin</time>
         </div>
     </div>
     <article class="cf txtCenter">
@@ -124,27 +124,6 @@
                 $("header").removeClass("headerWhiteBg", 300).addClass("light").fadeIn();
             }
            lastScrollTop = st;
-        });
-
-        /* Tweet Quotes */
-        $(function () {
-          $('blockquote').tweetable({
-            via: 'matejlatin'
-          });
-        });
-
-
-        $(document).ready(function() {
-
-        $(window).scroll( function(){
-            $('.tweet').each( function(i){
-                var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-                if( bottom_of_window > bottom_of_object ){
-                    $(this).delay(200).animate({'opacity':'1'},300);
-                    }
-                });
-            });
         });
     </script>
     <!--Typekit import-->

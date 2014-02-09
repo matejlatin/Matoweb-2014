@@ -95,6 +95,9 @@ article p a {
 a:visited {
     text-decoration: none;
 }
+header a {
+    color: #222;
+}
 nav a {
     color: #fff;
     font-size: 2em;

@@ -1,0 +1,54 @@
+/* Backgrounds */
+.manage {
+    background: url(../images/posts/manage.jpg) center center;
+    background-size: cover;
+}
+
+/* Home */
+.home {
+    background: url(../images/index.jpg) center center;
+    background-size: cover;
+    margin: 0;
+}
+.homeBg {
+    background: rgba(114,104,92,0.5);
+}
+.welcome {
+    margin: 0;
+    padding: 30% 0;
+}
+/* About */
+/* Work */
+/* Writings */
+
+/* Post */
+.tweet {
+    opacity: 0;
+    fill: #eaeaea;
+}
+time {
+    display: table;
+    margin: 1em auto;
+}
+aside section {
+    padding: 10% 0;
+}
+body>aside {
+/*    padding: 10% 5%;*/
+    background: url(../images/posts/dead.jpg) center center no-repeat;
+    background-size: cover;
+}
+body>aside section {
+    background: rgba(246,246,246, 0.9);
+}
+p + figure {
+    margin: 4em auto;
+}
+figure {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+figure img {
+    width: 100%;
+}
