@@ -101,8 +101,6 @@ header {
 }
 .menuToggle {
     display: none;
-    background: url(../images/posts/manage.jpg) center center;
-    background-size: cover;
     z-index: 9000;
 }
 nav {
