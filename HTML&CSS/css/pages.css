@@ -7,6 +7,10 @@
     background: url(../images/posts/dead.jpg) center center;
     background-size: cover;
 }
+.identimobBg {
+    background: url(../images/posts/identimob.jpg) center center;
+    background-size: cover;
+}
 
 /* Home */
 .home {

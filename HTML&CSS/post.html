@@ -31,6 +31,7 @@
             </ul>
         </div>
     </header>
+    <div class="arrow"><a href=""><img src="images/arrow-down.svg" alt=""></a></div>
     <div class="menuToggle manage">
         <nav>
             <a href="javascript:void(0)" class="btnCloseMenu">
@@ -128,6 +129,7 @@
         var wh = $(window).height();
         var ww = $(window).width();
         $('.intro').height(wh);
+        $('.arrow').css("display", "none").delay(1500).fadeIn(300);
 
         /* Mobile Menu Toggle */
         $(".btnMenu, .btnCloseMenu").click(function () {
@@ -140,6 +142,7 @@
         $(window).scroll(function(event){
             var st = $(this).scrollTop();
             if (st > 0 && (st + wh) < dh){
+                $(".arrow").fadeOut();
                 if (st > lastScrollTop){
                     $('header').fadeOut(); // FIXME Header fades out only on the end of swipe on mobile. Try jQuery Mobile.
                 } else {

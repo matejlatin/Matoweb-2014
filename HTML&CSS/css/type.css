@@ -60,6 +60,9 @@ h1 {
 .home h1 {
     font-size: 1.8em;
 }
+.logo h1 {
+        -webkit-font-smoothing: subpixel-antialiased;
+}
 h2 {
     font-size: 1.707em;
     margin: 1.707em auto 0.667em;
@@ -72,11 +75,14 @@ h3 {
 aside h2, section h2 {
     margin: 0 auto 1.3rem;
 }
-aside h4, .post h4, .post time {
+aside h4, .post h4, article h4, .post time {
     margin: 0 auto 1.5rem;
     font-size: 14px;
     color: #969696;
     font-weight: normal;
+}
+article h4 {
+    font-size: 16px;
 }
 .logo h1 {
     font-size: 30px;
@@ -118,7 +124,7 @@ nav a {
     text-align: center;
 }
 .intro .btn {
-    margin: 2em auto;
+    margin: 3em auto;
 }
 a.tweetable {
     text-decoration: none;

@@ -165,12 +165,4 @@
         }
     }
     /* LARGE screens modifications */
-    @media (-webkit-max-device-pixel-ratio: 1.5){
-        html {
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-        }
-    .logo h1 {
-        -webkit-font-smoothing: subpixel-antialiased;
-    }
-    }
+
