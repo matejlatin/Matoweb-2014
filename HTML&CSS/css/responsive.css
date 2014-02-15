@@ -13,7 +13,7 @@
         font-size: 4.236em;
         max-width: 60rem;
     }
-    .home h1 {
+    .home h1, .writings h1, .about h1 {
         font-size: 3em;
     }
     h2 {
