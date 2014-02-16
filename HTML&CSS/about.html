@@ -67,8 +67,8 @@
         </blockquote>
         <p>Design is about building / creating something. But it’s not about creation itself. Creativity is not enough - artists are creative, but nobody actually uses their art. They just admire it. So you could say that design is about creating something useful. And that’s what I have been doing since my early childhood.</p>
         <p>I always envied schoolmates that knew exactly what they’d want to be when they grow up, simply because I didn’t know that for myself. But the answer was right in front of me all the time. I just didn’t know the word for it - designer. </p>
+        <p>Get in touch: <a href="mailto:matejlatin@gmail.com">matejlatin@gmail.com</a>.</p>
         <h2>My Toolkit</h2>
-        <h2>What They Say About Me</h2>
     </article>
 
     <a href="https://twitter.com/intent/user?screen_name=matejlatin" class="twFollow">
@@ -126,18 +126,31 @@
           });
         });
 
-
+        //  Check the position of scroll
         $(document).ready(function() {
 
-        $(window).scroll( function(){
-            $('.tweet').each( function(i){
-                var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-                if( bottom_of_window > bottom_of_object ){
-                    $(this).delay(200).animate({'opacity':'1'},300);
-                    }
-                });
+            $(window).scroll( function(){
+                $('.tweet').each( function(i){
+                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    if( bottom_of_window > bottom_of_object ){
+                        $(this).delay(200).animate({'opacity':'1'},300);
+                        }
+                    });
             });
+        });
+        //  Animate page transitions
+        $(document).ready(function(){
+          $('body').css('display', 'none').fadeIn();
+
+          $('a').click(function(e){
+            window.goto=$(this).attr("href");
+            $('body').fadeOut('fast',function(){
+              document.location.href=window.goto;
+            });
+
+            e.preventDefault();
+          });
         });
     </script>
     <!--Typekit import-->
