@@ -13,7 +13,7 @@
         font-size: 4.236em;
         max-width: 60rem;
     }
-    .home h1 {
+    .home h1, .writings h1, .about h1 {
         font-size: 3em;
     }
     h2 {
@@ -165,12 +165,4 @@
         }
     }
     /* LARGE screens modifications */
-    @media (-webkit-max-device-pixel-ratio: 1.5){
-        html {
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-        }
-    .logo h1 {
-        -webkit-font-smoothing: subpixel-antialiased;
-    }
-    }
+

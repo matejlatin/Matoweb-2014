@@ -7,6 +7,18 @@
     background: url(../images/posts/dead.jpg) center center;
     background-size: cover;
 }
+.work {
+    background: url(../images/work.jpg) center center;
+    background-size: cover;
+}
+.writings {
+    background: url(../images/writings.jpg) center center;
+    background-size: cover;
+}
+.about {
+    background: url(../images/about.jpg) center center;
+    background-size: cover;
+}
 
 /* Home */
 .home {
@@ -15,7 +27,7 @@
     margin: 0;
 }
 .homeBg {
-    background: rgba(114,104,92,0.5);
+    background: rgba(64,64,52,0.5);
 }
 .welcome {
     padding: 30% 0;
