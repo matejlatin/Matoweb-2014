@@ -131,7 +131,7 @@
 
         //  Animate page transitions
         $(document).ready(function(){
-          $('body').css('display', 'none').fadeIn();
+          $('body').css('display', 'none').fadeIn('fast');
 
           $('a').click(function(e){
             window.goto=$(this).attr("href");
