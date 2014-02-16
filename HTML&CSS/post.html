@@ -175,6 +175,20 @@
                 });
             });
         });
+
+        //  Animate page transitions
+        $(document).ready(function(){
+          $('body').css('display', 'none').fadeIn();
+
+          $('a').click(function(e){
+            window.goto=$(this).attr("href");
+            $('body').fadeOut('fast',function(){
+              document.location.href=window.goto;
+            });
+
+            e.preventDefault();
+          });
+        });
     </script>
     <!--Typekit import-->
     <script type="text/javascript" src="//use.typekit.net/iph0jsa.js"></script>
