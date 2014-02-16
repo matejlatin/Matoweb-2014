@@ -34,6 +34,28 @@
 }
 /* About */
 /* Work */
+.articlesList h4 {
+    margin: 4% auto;
+}
+#shotsByPlayerId {
+    margin: 0 0 4%;
+    padding: 0;
+    width: 100%;
+}
+#shotsByPlayerId li {
+    width: 25%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#shotsByPlayerId img {
+    max-width: 100%;
+    float: left;
+}
+#shotsByPlayerId a {
+    display: block;
+}
 /* Writings */
 .articlesList section:first-child {
     margin-top: 4%;

@@ -95,6 +95,9 @@ body, html {
     position: relative;
     top: -40px;
 }
+footer {
+    padding: 6% 0 2%;
+}
 
 /* Navigation */
 header {
@@ -173,26 +176,6 @@ nav>ul>li>ul {
 }
 .mainMenu {
     display: none;
-}
-/* Dribbble shots */
-#shotsByPlayerId {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#shotsByPlayerId li {
-    width: 25%;
-    display: block;
-    margin: 0;
-    padding: 0;
-    float: left;
-}
-#shotsByPlayerId img {
-    max-width: 100%;
-    float: left;
-}
-#shotsByPlayerId a {
-    display: block;
 }
 
 /* Minor Fixes */
